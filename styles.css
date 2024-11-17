@@ -1,0 +1,662 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Section Styles */
+#header {
+    background: linear-gradient(to right, #00aaff, #004c99); /* Gradient from light blue to dark blue */
+    color: white;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+#header .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Heading Styles */
+#header .display-4 {
+    font-size: 3.5rem; /* Large font for the name */
+    font-weight: 700;  /* Bold font */
+    letter-spacing: 1px;
+    color: #f8f9fa;  /* Light color for better contrast */
+    margin-bottom: 15px;
+}
+
+/* Subtitle Styles */
+#header .lead {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #e0e0e0;  /* Lighter color for subtitle */
+}
+
+/* Button Styles */
+#header .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+#header .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+#header .btn-primary:focus {
+    outline: none;
+}
+
+/* Animation for header text */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#header h1, #header p, #header .btn-primary {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #header .display-4 {
+        font-size: 2.5rem; /* Smaller font on mobile */
+    }
+
+    #header .lead {
+        font-size: 1.2rem; /* Smaller subtitle */
+    }
+
+    #header .btn-primary {
+        font-size: 1rem; /* Smaller button text */
+    }
+}
+
+/* General Styles */
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Work Experience Section */
+#experience {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+#experience .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+#experience .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#experience .card-body {
+    padding: 20px;
+}
+
+#experience .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#experience .card-subtitle {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #6c757d;
+}
+
+/* Icon Styling */
+#experience .card-header {
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#experience .card-header i {
+    font-size: 2.5rem;
+}
+
+/* Education Section */
+#education {
+    background-color: #f1f1f1;
+    padding: 50px 0;
+}
+
+#education .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+#education .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+#education .card-header {
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#education .card-header i {
+    font-size: 2.5rem;
+}
+
+#education .card-body {
+    padding: 30px;
+}
+
+#education .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#education .card-subtitle {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+#education .card-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Hover effect for the card */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .card-header i {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-subtitle {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Technology Tools Section */
+#tools {
+    background-color: #e9ecef;
+    padding: 50px 0;
+}
+
+#tools .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+#tools .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#tools .card-body {
+    padding: 20px;
+}
+
+#tools .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#tools .card-subtitle {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #6c757d;
+}
+
+#tools .card-header {
+    background-color: #17a2b8;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#tools .card-header i {
+    font-size: 2.5rem;
+}
+
+/* Common Card Styling */
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card .btn {
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.card .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.card .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+
+/* Common Card Styling */
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card .btn {
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.card .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.card .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+
+/* Skills Section */
+.skill-card {
+    background-color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card i {
+    color: #007bff;
+    font-size: 3rem;
+}
+
+.skill-card h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    transition: width 0.6s ease-in-out;
+}
+
+
+
+/* Profile Section */
+.profile-img-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border: 5px solid #007bff;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+.profile-img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.profile-img-container:hover img {
+    transform: scale(1.1);
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+
+/* Portolio Section */
+#portfolio {
+    background-color: #f8f9fa; /* Light background color */
+}
+
+#portfolio .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#portfolio .card:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhance shadow on hover */
+}
+
+#portfolio .card-img-top {
+    object-fit: cover;
+    height: 200px; /* Fix height of images for consistency */
+}
+
+#portfolio .card-body {
+    padding: 25px; /* Add more padding for better spacing */
+}
+
+#portfolio .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333; /* Darker color for the title */
+    margin-bottom: 10px;
+}
+
+#portfolio .card-text {
+    font-size: 1rem;
+    color: #666; /* Lighter text color for description */
+    margin-bottom: 20px;
+}
+
+#portfolio .btn-primary {
+    background-color: #007bff; /* Custom primary button color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+#portfolio .btn-primary:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+#portfolio .container h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #portfolio .card-body {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+
+    #portfolio .card-title {
+        font-size: 1.3rem; /* Smaller font size on mobile */
+    }
+
+    #portfolio .card-text {
+        font-size: 0.9rem; /* Smaller description text */
+    }
+
+    #portfolio .btn-primary {
+        font-size: 0.9rem; /* Smaller button text */
+    }
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #007bff;
+}
+
+.card-text {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Hover Effect on View Project Button */
+.btn-primary {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .portfolio-card img {
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+
+/* Contact Section Styles */
+#contact {
+    background-color: #2c3e50; /* Dark Blue */
+    color: #fff;
+    padding: 80px 0;
+}
+
+
+
+#contact h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#contact .lead {
+    font-size: 1.25rem;
+    color: #adb5bd;
+}
+
+#contact .btn-outline-light {
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+#contact .btn-outline-light i {
+    font-size: 1.5rem;
+}
+
+/* Button Hover Effect */
+#contact .btn-outline-light:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+/* Social Media Buttons Alignment */
+#contact .btn-lg {
+    transition: transform 0.3s ease;
+}
+
+#contact .btn-lg:hover {
+    transform: scale(1.1);
+}
+
+/* Aligning the contact info buttons */
+#contact .row .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Make contact section responsive */
+@media (max-width: 768px) {
+    #contact h2 {
+        font-size: 2.5rem;
+    }
+    
+    #contact .lead {
+        font-size: 1.1rem;
+    }
+
+    #contact .btn-outline-light {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    
+    #contact .btn-lg {
+        font-size: 1.25rem;
+    }
+}
+
+
+/* Social Media Buttons */
+
+
+
+/* Set the icon size */
+.bi {
+    font-size: 2rem;  /* You can adjust this size as needed */
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for icons */
+.btn:hover .bi {
+    transform: scale(1.2); /* Slightly enlarge icons when hovered */
+}
+
+/* Footer Section */
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+
+footer p {
+    margin: 0;
+}
+
+/* Small Devices Adjustment */
+@media (max-width: 768px) {
+    #contact .row div {
+        margin-bottom: 20px;
+    }
+
+    #contact .btn-outline-light {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
