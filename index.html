@@ -3,401 +3,474 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Muhammad Ayaz - Web Developer">
-    <title>Muhammad Ayaz - Portfolio</title>
+    <meta name="description" content="Portfolio of Muhammad Ayaz - Python/Django & FastAPI Developer">
+    <title>Muhammad Ayaz | Python/Django Developer</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Add this in your <head> tag to load Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-    
+     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- 
- 
-    <!-- Header Section -->
-<header class="bg-dark text-white text-center py-5" id="header">
-    <div class="container">
-        <h1 class="display-4 fw-bold">Muhammad Ayaz</h1>
-        <p class="lead mb-4">Software Developer | Backend Developer</p>
-        <a href="#contact" class="btn btn-primary btn-lg mt-3 px-4 py-2">Contact Me</a>
-    </div>
-</header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Muhammad Ayaz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-
-    <!-- About Section -->
-
-    <section id="about" class="py-5 bg-light">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-5 text-center mb-4 mb-md-0">
+                <div class="col-lg-8 hero-content">
+                    <h4 class="text-light mb-3">Hello, I'm</h4>
+                    <h1 class="hero-title">Muhammad <span class="highlight">Ayaz</span></h1>
+                    <h2 class="hero-subtitle">Python/Django & FastAPI Developer</h2>
+                    <p class="lead text-light mb-4">I build robust backend systems and web applications with Django, Django REST Framework, and FastAPI. Passionate about creating efficient, scalable solutions that solve real-world problems.</p>
+                    
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary btn-lg">Hire Me</a>
+                        <a href="#portfolio" class="btn btn-outline-light btn-lg">View Portfolio</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Download CV</a>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <div class="tech-item">Python</div>
+                        <div class="tech-item">Django</div>
+                        <div class="tech-item">Django REST API</div>
+                        <div class="tech-item">FastAPI</div>
+                        <div class="tech-item">PostgreSQL</div>
+                        <div class="tech-item">HTML/CSS</div>
+                        <div class="tech-item">JavaScript</div>
+                        <div class="tech-item">Git & GitHub</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
                     <div class="profile-img-container">
-                        <img src="images/profile.jpeg" alt="Profile" class="rounded-circle shadow-lg">
+                        <img src="images/ayaz.jpg" alt="Muhammad Ayaz" class="profile-img">
                     </div>
-                </div>
-                <div class="col-md-7">
-                    <h2 class="mb-4">Hello, I'm <span class="text-primary">Muhammad Ayaz</span></h2>
-                    <p class="text-muted">
-                        I am a passionate Software Developer specializing in frontend and backend development. My expertise includes building responsive, user-friendly interfaces and crafting robust backend solutions with Django and FastAPI. I thrive on turning ideas into functional digital experiences.
-                    </p>
-                    <a href="#contact" class="btn btn-primary btn-lg mt-3">Hire Me</a>
-                    <a href="#portfolio" class="btn btn-outline-secondary btn-lg mt-3">View Portfolio</a>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Education Section -->
-<section id="education" class="py-5">
-    <div class="container text-center">
-        <h2 class="mb-5">Education</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-6 mb-4">
-                <div class="card shadow-lg border-light">
-                    <div class="card-header bg-primary text-white">
-                        <i class="bi bi-graduation-cap"></i> <!-- Icon for Education -->
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <img src="images/ayaz.jpg" alt="About Me" class="about-img">
+                </div>
+                <div class="col-lg-7">
+                    <h2 class="section-title mb-4">About Me</h2>
+                    <p class="lead mb-4">I'm a passionate <strong>Backend Developer</strong> with extensive experience in <span class="text-primary">Python, Django, and FastAPI</span>. I specialize in building robust web applications and RESTful APIs.</p>
+                    
+                    <p class="mb-4">With a Bachelor's degree in Computer Science and hands-on experience working on multiple projects, I've developed a strong understanding of backend architecture, database design, and API development. I focus on writing clean, efficient, and maintainable code.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <h5><i class="bi bi-check-circle-fill text-primary me-2"></i>Backend Development</h5>
+                            <p class="text-muted">Django, FastAPI, REST APIs, Database Design</p>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h5><i class="bi bi-check-circle-fill text-primary me-2"></i>Frontend Basics</h5>
+                            <p class="text-muted">HTML5, CSS3, JavaScript, Bootstrap</p>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h5><i class="bi bi-check-circle-fill text-primary me-2"></i>Database Management</h5>
+                            <p class="text-muted">PostgreSQL, SQL, Database Optimization</p>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h5><i class="bi bi-check-circle-fill text-primary me-2"></i>Tools & Technologies</h5>
+                            <p class="text-muted">Git, Postman, VS Code, Docker Basics</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Bachelor of Science in Computer Science</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Govt PG Jahanzeb College Saidu Sharif Affiliated to University of Swat</h6>
-                        <p class="card-text">Graduated with honors, specialized in web development and backend technologies.</p>
-                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary btn-lg mt-3">Let's Work Together</a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    
-    
-    <!-- Work Experience Section -->
-<!-- <section id="experience" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="mb-5 text-center">Work Experience</h2>
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="card shadow-lg">
-                    <div class="card-body">
-                        <h5 class="card-title">Frontend Developer</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">XYZ Company | Jan 2022 - Present</h6>
-                        <p class="card-text">Responsible for developing user-friendly interfaces using HTML5, CSS3, JavaScript, React.js, and Tailwind CSS. Improved website responsiveness, optimized user experience, and collaborated with backend developers to integrate APIs.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card shadow-lg">
-                    <div class="card-body">
-                        <h5 class="card-title">Backend Developer</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">ABC Tech | June 2021 - Dec 2021</h6>
-                        <p class="card-text">Worked with Django and FastAPI to build and maintain robust backend services. Developed RESTful APIs and integrated with databases like PostgreSQL. Ensured security best practices and optimized backend performance.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-<section id="experience" class="py-5">
-    <div class="container text-center">
-        <h2 class="mb-5">Work Experience</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-header">
-                        <i class="bi bi-briefcase"></i> <!-- Icon for Work Experience -->
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Web Development</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Mideast</h6>
-                        <p class="card-text">Developed responsive and interactive websites using HTML, CSS, JavaScript, React.js, Python ,Django and FastAPI</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-header">
-                        <i class="bi bi-briefcase"></i> <!-- Icon for Work Experience -->
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Backend Developer /APIs</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">EmpowerBits</h6>
-                        <p class="card-text">Developed responsive and interactive websites using HTML, CSS, JavaScript, React.js, Python and FastAPI</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-header">
-                        <i class="bi bi-briefcase"></i> <!-- Icon for Work Experience -->
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Web Development</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">USAID/UNNP</h6>
-                        <p class="card-text">Developed responsive and interactive websites using HTML, CSS, JavaScript, and Django</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more job entries as needed -->
-        </div>
-    </div>
-</section>
-
-<!-- Skills Section -->
-     <section id="skills" class="py-5">
-        <div class="container text-center">
-            <h2 class="mb-5">My Technical Skills</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Technical Skills</h2>
+            
             <div class="row">
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="skill-card shadow p-4 rounded">
-                        <i class="bi bi-code-slash display-4 text-primary"></i>
-                        <h5>HTML5 & CSS3</h5>
-                        <div class="progress mt-3">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                <!-- Core Backend Skills -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="bi bi-filetype-py"></i>
+                        </div>
+                        <h5>Python Development</h5>
+                        <p>Strong foundation in Python for backend development, automation, and data processing.</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 80%">80%</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="skill-card shadow p-4 rounded">
-                        <i class="bi bi-bootstrap display-4 text-primary"></i>
-                        <h5>Bootstrap</h5>
-                        <div class="progress mt-3">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="bi bi-server"></i>
+                        </div>
+                        <h5>Django & Django REST</h5>
+                        <p>Building robust web applications and RESTful APIs with Django and Django REST Framework.</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 85%">85%</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="skill-card shadow p-4 rounded">
-                        <i class="bi bi-journal-code display-4 text-primary"></i>
-                        <h5>JavaScript</h5>
-                        <div class="progress mt-3">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="bi bi-lightning-charge"></i>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="skill-card shadow p-4 rounded">
-                        <i class="bi bi-tools display-4 text-primary"></i>
-                        <h5>React.js</h5>
-                        <div class="progress mt-3">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
-                        </div>
-                    </div>
-                </div>
-             
-
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="skill-card shadow p-4 rounded">
-                        <i class="bi bi-server display-4 text-primary"></i>
-                        <h5>Python</h5>
-                        <div class="progress mt-3">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="skill-card shadow p-4 rounded">
-                        <i class="bi bi-server display-4 text-primary"></i>
-                        <h5>Django</h5>
-                        <div class="progress mt-3">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="skill-card shadow p-4 rounded">
-                        <i class="bi bi-server display-4 text-primary"></i>
                         <h5>FastAPI</h5>
-                        <div class="progress mt-3">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+                        <p>Developing high-performance APIs with FastAPI for modern web applications.</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 75%">75%</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="skill-card shadow p-4 rounded">
-                        <i class="bi bi-server display-4 text-primary"></i>
-                        <h5>SQL Database</h5>
-                        <div class="progress mt-3">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+                
+                <!-- Database Skills -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="bi bi-database"></i>
+                        </div>
+                        <h5>PostgreSQL & SQL</h5>
+                        <p>Database design, query optimization, and management with PostgreSQL and other SQL databases.</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 80%">80%</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="skill-card shadow p-4 rounded">
-                        <i class="bi bi-server display-4 text-primary"></i>
-                        <h5>PostgreSQL Database</h5>
-                        <div class="progress mt-3">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+                
+                <!-- Frontend Skills -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <h5>HTML5, CSS3 & JavaScript</h5>
+                        <p>Creating responsive and interactive frontend interfaces with modern web technologies.</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 70%">70%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <h5>Development Tools</h5>
+                        <p>Git, GitHub, Postman, VS Code, Docker basics, and other essential development tools.</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 85%">85%</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
- <!-- Technology Tools Section -->
-    <div class="container">
-        <h2 class="mb-5 text-center">Technology Tools</h2>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card shadow-lg">
-                    <div class="card-body">
-                        <h5 class="card-title">Git / Github</h5>
-                        <p class="card-text">Version control system for tracking changes in the source code during development.</p>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Work Experience</h2>
+            
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Backend Developer / API Developer</h5>
+                        <h6 class="text-primary mb-3">Mideast Pakistan</h6>
+                        <p>Developed and maintained RESTful APIs using Django REST Framework and FastAPI. Worked on database design and optimization with PostgreSQL. Collaborated with frontend teams to integrate APIs with React.js applications.</p>
+                        <span class="badge bg-primary">Django</span>
+                        <span class="badge bg-primary">FastAPI</span>
+                        <span class="badge bg-primary">PostgreSQL</span>
+                        <span class="badge bg-primary">REST APIs</span>
+                        <span class="badge bg-primary">React.js</span>
+                        <span class="badge bg-primary">Bootstrap 5</span>
+                        <span class="badge bg-primary">JavaScript</span>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card shadow-lg">
-                    <div class="card-body">
-                        <h5 class="card-title">Postman / Swagger</h5>
-                        <p class="card-text">API testing tool for sending HTTP requests and validating responses during development.</p>
+                
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Backend Development Intern</h5>
+                        <h6 class="text-primary mb-3">DeveloperHub Corporation</h6>
+                        <p>Built responsive websites and web applications using Django, HTML, CSS, and JavaScript. Implemented backend logic, database models, and admin panels for various client projects.</p>
+                        <span class="badge bg-primary">Django</span>
+                        <span class="badge bg-primary">Rest APIs</span>
+                        <span class="badge bg-primary">Python</span>
+                        <span class="badge bg-primary">HTML/CSS</span>
+                        <span class="badge bg-primary">Bootstrap 5</span>
+                        <span class="badge bg-primary">JavaScript</span>
+                        <span class="badge bg-primary">React.js</span>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card shadow-lg">
-                    <div class="card-body">
-                        <h5 class="card-title">Monday</h5>
-                        <p class="card-text">Monday.com is best used for project management, task management, and team collaboration. It offers highly customizable workflows and visualizations to help teams organize and track their work</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card shadow-lg">
-                    <div class="card-body">
-                        <h5 class="card-title">Figma</h5>
-                        <p class="card-text">Design tool for creating wireframes, UI prototypes, and design assets.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card shadow-lg">
-                    <div class="card-body">
-                        <h5 class="card-title">Visual Studio Code</h5>
-                        <p class="card-text">A source code editor with features like debugging, extensions, and Git integration for efficient development.</p>
+                
+                <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Web Development Intern</h5>
+                        <h6 class="text-primary mb-3">EmpowerBits</h6>
+                        <p>Assisted in developing web applications using FastApi. Gained hands-on experience in full-stack development, from database design to frontend implementation.</p>
+                        <span class="badge bg-primary">FastApi</span>
+                        <span class="badge bg-primary">Web Development</span>
+                        <span class="badge bg-primary">Database Design</span>
                     </div>
                 </div>
             </div>
             
+            <div class="text-center mt-5">
+                <a href="#contact" class="btn btn-primary btn-lg">Available for Opportunities</a>
             </div>
         </div>
-    </div>
-</section> -->
+    </section>
 
-
-
-
-    <section id="portfolio" class="py-5 bg-light">
-        <div class="container text-center">
-            <h2 class="mb-5">My Portfolio</h2>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">My Projects</h2>
+            
             <div class="row">
                 <!-- Project 1 -->
-                <div class="col-md-6 mb-4">
-                    <div class="card shadow-lg portfolio-card">
-                        <img src="images/wix.jpg" class="card-img-top" alt="Project 1">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="portfolio-card">
+                        <img src="images/ecomerce.PNG" class="card-img-top" alt="E-commerce API">
                         <div class="card-body">
-                            <h5 class="card-title">Website Builder</h5>
-                            <p class="card-text">An online Website Builder platform built with HTML and CSS.</p>
-                            <a href="https://developerayaz7382.github.io/Wix/" class="btn btn-primary">View Project</a>
+                            <h5 class="card-title">E-commerce Frontend & Backend</h5>
+                            <p class="card-text">A complete e-commerce backend system built with Django. Features include user authentication, product management, shopping cart, and order processing.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">Django</span>
+                                <span class="badge bg-primary">PostgreSQL</span>
+                                <span class="badge bg-primary">JWT Authentication</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/DeveloperAyaz7382/ecommerce-backend-design" target="_blank" class="btn btn-sm btn-primary">GitHub</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Live Demo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                
                 <!-- Project 2 -->
-                <div class="col-md-6 mb-4">
-                    <div class="card shadow-lg portfolio-card">
-                        <img src="images/Furniture.jpg" class="card-img-top" alt="Project 2">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="portfolio-card">
+                        <img src="images/GCMS.PNG" class="card-img-top" alt="School Management">
                         <div class="card-body">
-                            <h5 class="card-title">Furniture Website</h5>
-                            <p class="card-text">A Furniture Website built with HTML, CSS, and FastAPI backend.</p>
-                            <a href="https://developerayaz7382.github.io/Furniture/" class="btn btn-primary">View Project</a>
+                            <h5 class="card-title">Dynamic College Website</h5>
+                            <p class="card-text">A dynamic college website featuring online event management, online admissions, notifications, and many more interactive modules.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">Django</span>
+                                <span class="badge bg-primary">PostgreSQL</span>
+                                <span class="badge bg-primary">Bootstrap 5</span>
+                                <span class="badge bg-primary">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/DeveloperAyaz7382/GCMS_Website" target="_blank" class="btn btn-sm btn-primary">GitHub</a>
+                                <a href="https://github.com/DeveloperAyaz7382/GCMS_Website" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="portfolio-card">
+                        <img src="images/TST.PNG" class="card-img-top" alt="FastAPI Project">
+                        <div class="card-body">
+                            <h5 class="card-title">TST Communication Website</h5>
+                            <p class="card-text">The official TST Communication website, designed to showcase services, company information, and provide easy customer communication.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">Django</span>
+                                <span class="badge bg-primary">PostgreSQL</span>
+                                <span class="badge bg-primary">Bootstrap 5</span>
+                                <span class="badge bg-primary">CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/DeveloperAyaz7382/portfoliotstcommunication" target="_blank" class="btn btn-sm btn-primary">GitHub</a>
+                                <a href="https://developerayaz7382.github.io/portfoliotstcommunication/" class="btn btn-sm btn-outline-primary">Live Demo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
-            <div class="row">
-                <!-- Project 3 -->
-                <div class="col-md-6 mb-4">
-                    <div class="card shadow-lg portfolio-card">
-                        <img src="images/school-mangment.jpg" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">School Management System</h5>
-                            <p class="card-text">An online School Management System built with HTML and CSS.</p>
-                            <a href="https://developerayaz7382.github.io/School-Management-System/" class="btn btn-primary">View Project</a>
+            
+            <div class="text-center mt-5">
+                <a href="https://github.com/DeveloperAyaz7382?tab=repositories" target="_blank" class="btn btn-outline-primary btn-lg">View More on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5 text-white">Get In Touch</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <h5>Email</h5>
+                                <p>developer1565@gmail.com</p>
+                                <a href="mailto:developer1565@gmail.com" class="btn btn-outline-light">Send Email</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-4">
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <h5>Phone</h5>
+                                <p>+92 344 5927382</p>
+                                <a href="tel:+923445927382" class="btn btn-outline-light">Call Now</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- Project 4 -->
-                <div class="col-md-6 mb-4">
-                    <div class="card shadow-lg portfolio-card">
-                        <img src="images/king.jpg" class="card-img-top" alt="Project 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Kings-Edgehill-School</h5>
-                            <p class="card-text">A Kings-Edgehill-School platform built with HTML and CSS.</p>
-                            <a href="https://developerayaz7382.github.io/Kings-Edgehill-School/" class="btn btn-primary">View Project</a>
+                    
+                    <div class="text-center mt-5">
+                        <h4 class="mb-4 text-white">Connect with me on social media</h4>
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <a href="https://github.com/DeveloperAyaz7382" target="_blank" class="btn btn-outline-light btn-lg m-2">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/mohammad-ayaz-511a9b173/" target="_blank" class="btn btn-outline-light btn-lg m-2">
+                                <i class="bi bi-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100094175126479" target="_blank" class="btn btn-outline-light btn-lg m-2">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                            <a href="https://web.whatsapp.com/" target="_blank" class="btn btn-outline-light btn-lg m-2">
+                                <i class="bi bi-whatsapp"></i> WhatsApp
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
 
-
-   <<!-- Contact Section -->
-<section id="contact" class="bg-dark text-white py-5">
-    <div class="container text-center">
-        <h2 class="display-4 mb-4">Contact Me</h2>
-        <p class="lead mb-5">Have a project in mind? Let’s bring it to life! Reach out to discuss your ideas.</p>
-        
-        <!-- Contact Info -->
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-4 mb-4 mb-md-0">
-                <p class="h5 mb-2">Email</p>
-                <a href="mailto:developer1565@gmail.com" class="btn btn-outline-light btn-lg w-100">
-                    <i class="bi bi-envelope me-2"></i>developer1565@gmail.com
-                </a>
-            </div>
-            <div class="col-md-4">
-                <p class="h5 mb-2">Phone</p>
-                <a href="tel:+923445927382" class="btn btn-outline-light btn-lg w-100">
-                    <i class="bi bi-telephone-fill me-2"></i>+923445927382
-                </a>
-            </div>
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-2 text-white">&copy; 2024 Muhammad Ayaz. All rights reserved.</p>
+            <p class="text-light">Python/Django & FastAPI Developer | Backend Specialist</p>
         </div>
-
-        <!-- Social Media Icons -->
-        <div class="d-flex justify-content-center mt-4">
-            <a href="https://github.com/DeveloperAyaz7382" target="_blank" class="btn btn-outline-light btn-lg me-3">
-                <i class="bi bi-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/mohammad-ayaz-511a9b173/" target="_blank" class="btn btn-outline-light btn-lg me-3">
-                <i class="bi bi-linkedin"></i>
-            </a>
-            <a href="mailto:developer1565@gmail.com" class="btn btn-outline-light btn-lg me-3">
-                <i class="bi bi-envelope"></i>
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=100094175126479" target="_blank" class="btn btn-outline-light btn-lg me-3">
-                <i class="bi bi-facebook"></i>
-            </a>
-            <a href="https://web.whatsapp.com/" target="_blank" class="btn btn-outline-light btn-lg">
-                <i class="bi bi-whatsapp"></i>
-            </a>
-        </div>
-    </div>
-</section>
-
-
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-4">
-    <p>&copy; 2024 Muhammad Ayaz. All rights reserved.</p>
-</footer>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <!-- Custom JS -->
-    <script src="scripts.js"></script>
+    <script>
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = 'rgba(15, 23, 42, 0.98)';
+                navbar.style.padding = '0.5rem 0';
+            } else {
+                navbar.style.backgroundColor = 'rgba(15, 23, 42, 0.95)';
+                navbar.style.padding = '1rem 0';
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update active nav link
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                }
+            });
+        });
+        
+        // Nav link active state on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
